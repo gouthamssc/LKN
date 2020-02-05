@@ -52,6 +52,29 @@
             </execution>
           </executions>
         </plugin>
+        
+              <plugin>
+                <groupId>org.scalatest</groupId>
+                <artifactId>scalatest-maven-plugin</artifactId>
+                <version>1.0</version>
+                <configuration>
+                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+                    <junitxml>.</junitxml>
+                    <filereports>specs.log</filereports>
+                    <htmlreporters>${project.build.directory}/surefire-reports/html</htmlreporters>
+                    <parallel>false</parallel>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>test</id>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        
+        
         <!-- mixed scala/java compile -->
         <plugin>
           <groupId>net.alchim31.maven</groupId>
