@@ -22,7 +22,7 @@
           <artifactId>maven-shade-plugin</artifactId>
           <version>3.2.1</version>
           <configuration>
-            <finalName>uber-SQMBudget-0.0.1-SNAPSHOT</finalName>
+            <finalName>BIM-CLT</finalName>
           </configuration>
           <executions>
             <execution>
@@ -52,28 +52,7 @@
             </execution>
           </executions>
         </plugin>
-        
-              <plugin>
-                <groupId>org.scalatest</groupId>
-                <artifactId>scalatest-maven-plugin</artifactId>
-                <version>1.0</version>
-                <configuration>
-                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
-                    <junitxml>.</junitxml>
-                    <filereports>specs.log</filereports>
-                    <htmlreporters>${project.build.directory}/surefire-reports/html</htmlreporters>
-                    <parallel>false</parallel>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>test</id>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        
+       
         
         <!-- mixed scala/java compile -->
         <plugin>
