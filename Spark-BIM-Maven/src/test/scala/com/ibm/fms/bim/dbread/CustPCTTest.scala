@@ -12,7 +12,7 @@ class CustPCTTest  extends FunSuite with SparkSessionTestWrapper {
     val nullableBoolean = true;
     val expectedSchema = StructType(Seq(StructField("TARGET_ACCOUNT_ID", LongType, nullableBoolean)
       , StructField("BRAND_SUB_SUBGROUP_ID", LongType, nullableBoolean)
-      , StructField("ITT_ATTRIB_VALUE_ID", LongType, nullableBoolean)
+      , StructField("ITT_ATTRIB_VALUE_ID_TGT", LongType, nullableBoolean)
       , StructField("IMT_ID", LongType, nullableBoolean)
       , StructField("ITT_CUST_ID", LongType, nullableBoolean)
       ,StructField("CUST_ACCT_PCT",  DataTypes.createDecimalType(11,10), nullableBoolean)
