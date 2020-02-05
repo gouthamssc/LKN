@@ -291,6 +291,26 @@
         <artifactId>commons-dbutils</artifactId>
         <version>1.7</version>
       </dependency>
+      
+      
+      
+          <dependency>
+            <groupId>com.ibm</groupId>
+            <artifactId>db2jcc4</artifactId>
+            <version>4.23.42</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/db2jcc4.jar</systemPath>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.ibm</groupId>
+            <artifactId>db2jcc_license_cisuz</artifactId>
+            <version>4.23.42</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/db2jcc_license_cisuz.jar</systemPath>
+        </dependency>
+      
+      
       <!-- configuration -->
       
        <dependency>
