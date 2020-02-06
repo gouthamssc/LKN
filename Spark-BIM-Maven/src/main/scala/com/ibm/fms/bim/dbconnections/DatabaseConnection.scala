@@ -9,8 +9,8 @@ class DatabaseConnection {
     val devProperties = new Properties()
     devProperties.put("user", getDBUserName())
     devProperties.put("password", getDBPassword())
-    devProperties.put("sslConnection", "true")
-    devProperties.put("sslTrustStoreLocation", getDBJKSFile())
+//     devProperties.put("sslConnection", "true")
+//     devProperties.put("sslTrustStoreLocation", getDBJKSFile())
     devProperties
   }
 
@@ -50,11 +50,11 @@ class DatabaseConnection {
   def getDBUrl(): String = {
 
 
-    val url = "jdbc:db2://" + getDBip() + ":" + getDBport() + "/" +getDBName()
+//     val url = "jdbc:db2://" + getDBip() + ":" + getDBport() + "/" +getDBName()
+    val url =   "jdbc:db2://cap-sg-prd-4.securegateway.appdomain.cloud:19881/LP01CDA1"
 
     url
 
-    //val url =   "jdbc:db2://cap-sg-prd-4.securegateway.appdomain.cloud:19881/LP01CDA1"
 
   }
 
