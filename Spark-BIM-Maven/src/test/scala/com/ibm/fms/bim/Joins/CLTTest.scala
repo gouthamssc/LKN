@@ -48,7 +48,7 @@ class CLTTest extends FunSuite  with SparkSessionTestWrapper {
   {
     val testHelperFunctions = new TestHelperFunctions()
     val CLTTest = new CLT()
-    val nullableBoolean = true;
+    val nullableBoolean = false;
 
     val expectedSchema = StructType(Seq(
 
