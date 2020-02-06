@@ -293,22 +293,20 @@
       </dependency>
       
       
-      
-          <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>db2jcc4</artifactId>
-            <version>4.23.42</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/db2jcc4.jar</systemPath>
-        </dependency>
-        
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>db2jcc_license_cisuz</artifactId>
-            <version>4.23.42</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/db2jcc_license_cisuz.jar</systemPath>
-        </dependency>
+       <dependency>
+        <groupId>com.ibm.db2.jcc</groupId>
+        <artifactId>licences</artifactId>
+        <version>4.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/lib/db2jcc_license_cisuz.jar</systemPath>
+    </dependency>
+    <dependency>
+        <groupId>com.ibm.db2.jcc</groupId>
+        <artifactId>db2jcc4</artifactId>
+        <version>1.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/lib/db2jcc4.jar</systemPath>
+    </dependency>
       
       
       <!-- configuration -->
